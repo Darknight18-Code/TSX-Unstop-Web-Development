@@ -4,6 +4,49 @@
   Version: 1.0
 */
 
+/* Progress Bars */
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-item h5 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: visible;
+  position: relative;
+}
+
+.progress-bar {
+  background: linear-gradient(45deg, #0071e3, #47a1ff);
+  border-radius: 4px;
+  position: relative;
+  transition: width 1s ease;
+  width: 0;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #0071e3;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Card Rainbow Effect */
 .project-card:hover,
 .project-card:focus-within {
   transform: translateY(-10px);

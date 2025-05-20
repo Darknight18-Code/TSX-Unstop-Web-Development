@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize progress
     updateProgressCircle();
     
-    // Fix progress bars animation
+    // Initialize progress bars
     const progressBars = document.querySelectorAll('.progress-bar');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -55,7 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }, { threshold: 0.5 });
     
-    progressBars.forEach(bar => observer.observe(bar));
+    progressBars.forEach(bar => {
+      bar.style.width = '0%';
+      observer.observe(bar);
+    });
     
     // Initialize theme
     initTheme();
