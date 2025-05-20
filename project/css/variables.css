@@ -1,0 +1,157 @@
+
+:root {
+  /* Primary Colors with RGB values for alpha adjustments */
+  --primary-rgb: 78, 115, 223;
+  --primary-color: rgb(var(--primary-rgb));
+  --primary-dark-rgb: 34, 74, 190;
+  --primary-dark: rgb(var(--primary-dark-rgb));
+  --primary-light-rgb: 118, 152, 237;
+  --primary-light: rgb(var(--primary-light-rgb));
+  
+  /* Secondary Colors */
+  --secondary-rgb: 232, 62, 140;
+  --secondary-color: rgb(var(--secondary-rgb));
+  --secondary-dark-rgb: 194, 30, 108;
+  --secondary-dark: rgb(var(--secondary-dark-rgb));
+  --secondary-light-rgb: 240, 126, 188;
+  --secondary-light: rgb(var(--secondary-light-rgb));
+  
+  /* Accent Colors */
+  --accent-rgb: 255, 170, 0;
+  --accent-color: rgb(var(--accent-rgb));
+  --accent-dark-rgb: 230, 138, 0;
+  --accent-dark: rgb(var(--accent-dark-rgb));
+  --accent-light-rgb: 255, 204, 102;
+  --accent-light: rgb(var(--accent-light-rgb));
+  
+  /* State Colors */
+  --success-rgb: 28, 200, 138;
+  --success-color: rgb(var(--success-rgb));
+  --warning-rgb: 246, 194, 62;
+  --warning-color: rgb(var(--warning-rgb));
+  --danger-rgb: 231, 74, 59;
+  --danger-color: rgb(var(--danger-rgb));
+  --info-rgb: 54, 185, 204;
+  --info-color: rgb(var(--info-rgb));
+  
+  /* Neutral Colors */
+  --dark-rgb: 26, 26, 46;
+  --dark-color: rgb(var(--dark-rgb));
+  --dark-lighter-rgb: 22, 33, 62;
+  --dark-color-lighter: rgb(var(--dark-lighter-rgb));
+  --dark-lightest-rgb: 15, 52, 96;
+  --dark-color-lightest: rgb(var(--dark-lightest-rgb));
+  
+  --light-rgb: 248, 249, 252;
+  --light-color: rgb(var(--light-rgb));
+  --light-darker-rgb: 238, 241, 248;
+  --light-color-darker: rgb(var(--light-darker-rgb));
+  
+  --gray-rgb: 108, 117, 125;
+  --gray-color: rgb(var(--gray-rgb));
+  --gray-light-rgb: 173, 181, 189;
+  --gray-light: rgb(var(--gray-light-rgb));
+  --gray-dark-rgb: 73, 80, 87;
+  --gray-dark: rgb(var(--gray-dark-rgb));
+  
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-md: 1.125rem;   /* 18px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 1.875rem;  /* 30px */
+  --font-size-3xl: 2.25rem;   /* 36px */
+  --font-size-4xl: 3rem;      /* 48px */
+  --font-size-5xl: 3.75rem;   /* 60px */
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Spacing (8px grid) */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-20: 5rem;    /* 80px */
+  --space-24: 6rem;    /* 96px */
+  --space-32: 8rem;    /* 128px */
+  --space-40: 10rem;   /* 160px */
+  --space-48: 12rem;   /* 192px */
+  --space-56: 14rem;   /* 224px */
+  --space-64: 16rem;   /* 256px */
+  
+  /* Border Radius */
+  --radius-sm: 0.125rem;  /* 2px */
+  --radius-md: 0.25rem;   /* 4px */
+  --radius-lg: 0.5rem;    /* 8px */
+  --radius-xl: 0.75rem;   /* 12px */
+  --radius-2xl: 1rem;     /* 16px */
+  --radius-3xl: 1.5rem;   /* 24px */
+  --radius-full: 9999px;
+  
+  /* Z-index */
+  --z-negative: -1;
+  --z-elevate: 1;
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  
+  /* Transitions */
+  --transition-fast: 0.2s;
+  --transition-medium: 0.3s;
+  --transition-slow: 0.5s;
+  --transition-extra-slow: 0.8s;
+  
+  /* Easing Functions */
+  --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ease-bounce: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  
+  /* Dark Mode Overrides - Applied dynamically via JavaScript */
+  --body-bg: var(--light-color);
+  --body-color: #333;
+  --card-bg: white;
+  --card-border: rgba(0, 0, 0, 0.125);
+  --input-bg: white;
+  --input-border: #ced4da;
+  --input-color: #495057;
+  --input-placeholder: #6c757d;
+}
+
+/* Dark Mode Variables - Applied via .dark-mode class */
+.dark-mode {
+  --body-bg: var(--dark-color);
+  --body-color: var(--light-color);
+  --card-bg: var(--dark-color-lighter);
+  --card-border: rgba(255, 255, 255, 0.125);
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-border: rgba(255, 255, 255, 0.2);
+  --input-color: white;
+  --input-placeholder: rgba(255, 255, 255, 0.6);
+}

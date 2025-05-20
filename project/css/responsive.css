@@ -1,0 +1,529 @@
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large devices (1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+  }
+  
+  .hero-description {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+  
+  .profession-text {
+    font-size: 2.2rem;
+  }
+  
+  .animated-border-box {
+    padding: 3rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .profession-text {
+    font-size: 2rem;
+  }
+  
+  .animated-border-box {
+    padding: 2.5rem;
+  }
+  
+  .about-image::before {
+    right: -15px;
+    bottom: -15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 7rem 0 5rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .profession-text {
+    font-size: 1.8rem;
+  }
+  
+  .hero-description {
+    max-width: 100%;
+  }
+  
+  .animated-border-box {
+    padding: 2rem;
+  }
+  
+  section {
+    padding: 5rem 0;
+  }
+  
+  .about-section,
+  .projects-section,
+  .contact-section {
+    padding: 5rem 0;
+  }
+  
+  .about-image {
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-image::before {
+    display: none;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .circle-1, .circle-2, .circle-3 {
+    opacity: 0.2;
+  }
+  
+  .shape {
+    opacity: 0.15;
+  }
+  
+  .contact-card-front {
+    padding: 2rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 7rem 0 5rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .profession-text {
+    font-size: 1.6rem;
+    min-height: 50px;
+  }
+  
+  .type-wrap {
+    min-height: 50px;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+  
+  .animated-border-box {
+    padding: 1.8rem;
+  }
+  
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1.25rem;
+    border-radius: 0.3rem;
+    margin-top: 0.625rem;
+  }
+  
+  .dark-mode .navbar-collapse {
+    background-color: rgba(15, 23, 42, 0.95);
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .btn-hero, .btn-outline-hero {
+    width: 100%;
+    text-align: center;
+  }
+  
+  section {
+    padding: 4rem 0;
+  }
+  
+  .about-section,
+  .projects-section,
+  .contact-section {
+    padding: 4rem 0;
+  }
+  
+  .about-image {
+    margin-bottom: 2rem;
+  }
+  
+  .about-image::before,
+  .about-image .img-frame {
+    display: none;
+  }
+  
+  .contact-info-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-card-front {
+    padding: 1.5rem;
+  }
+  
+  .social-icons {
+    gap: 0.75rem;
+  }
+  
+  .social-icon {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .mouse-scroll-container {
+    bottom: 20px;
+  }
+  
+  .bubble {
+    opacity: 0.3;
+  }
+  
+  .circle-1, .circle-2, .circle-3 {
+    opacity: 0.15;
+  }
+  
+  .shape {
+    opacity: 0.1;
+  }
+  
+  .custom-cursor-outer,
+  .custom-cursor-inner {
+    display: none;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 6rem 0 4rem;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .profession-text {
+    font-size: 1.4rem;
+    min-height: 45px;
+  }
+  
+  .type-wrap {
+    min-height: 45px;
+  }
+  
+  .typed-cursor {
+    font-size: 1.4rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .animated-border-box {
+    padding: 1.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn-hero, .btn-outline-hero {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+  
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+  }
+  
+  section {
+    padding: 3.5rem 0;
+  }
+  
+  .about-section,
+  .projects-section,
+  .contact-section {
+    padding: 3.5rem 0;
+  }
+  
+  .about-image {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-image::before,
+  .about-image .img-frame {
+    display: none;
+  }
+  
+  .contact-card-front {
+    padding: 1.2rem;
+  }
+  
+  .contact-section .section-title {
+    font-size: 2rem;
+  }
+  
+  .form-floating input,
+  .form-floating textarea {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-floating label {
+    top: 0.7rem;
+    left: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-contact {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .contact-info-card {
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .contact-info-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info-icon i {
+    font-size: 20px;
+  }
+  
+  .contact-info-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-icons {
+    gap: 0.5rem;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .social-icon i {
+    font-size: 16px;
+  }
+  
+  .mouse-scroll-container {
+    bottom: 15px;
+  }
+  
+  .mouse {
+    width: 22px;
+    height: 34px;
+  }
+  
+  .wheel {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .notification {
+    bottom: 15px;
+    right: 15px;
+    max-width: calc(100% - 30px);
+    padding: 10px 15px;
+  }
+  
+  .portfolio-filter {
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .progress-bar::after {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .bubble {
+    opacity: 0.2;
+  }
+  
+  .circle-1, .circle-2, .circle-3 {
+    opacity: 0.1;
+  }
+  
+  .shape {
+    opacity: 0.1;
+  }
+  
+  .scrollbar,
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .scroll-to-top {
+    width: 35px;
+    height: 35px;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .custom-cursor-outer,
+  .custom-cursor-inner {
+    display: none;
+  }
+}
+
+/* Special case for very small devices */
+@media (max-width: 360px) {
+  html {
+    font-size: 12px;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .profession-text,
+  .typed-cursor {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .btn-hero, .btn-outline-hero {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Print styles for better document printing */
+@media print {
+  .navbar,
+  .hero-section,
+  .mouse-scroll-container,
+  .footer,
+  .scroll-to-top,
+  .custom-cursor-outer,
+  .custom-cursor-inner,
+  .page-loader {
+    display: none !important;
+  }
+  
+  body,
+  .about-section,
+  .projects-section,
+  .contact-section {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .section-title,
+  .about-details h3,
+  .project-card .card-title,
+  .contact-info-card h3 {
+    color: black !important;
+  }
+  
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .project-card,
+  .contact-card-front,
+  .contact-info-card {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+  }
+  
+  section {
+    padding: 1rem 0 !important;
+    page-break-inside: avoid;
+  }
+  
+  .col-lg-4 {
+    width: 33.33% !important;
+    float: left !important;
+  }
+  
+  .col-lg-8 {
+    width: 66.67% !important;
+    float: left !important;
+  }
+}
