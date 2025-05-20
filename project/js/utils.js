@@ -1,4 +1,9 @@
-// Add to existing utils.js
+/**
+ * Utility Functions
+ * Author: John Doe
+ * Version: 1.0
+ */
+
 export const calculateScrollProgress = () => {
   const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
   const scrolled = window.pageYOffset;
