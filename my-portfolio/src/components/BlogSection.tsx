@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Card3D from './Card3D';
-import BlogBackground from './BlogBackground';
 import { BlogPost } from '@/types/blog';
 import { ArrowRight, Zap } from 'lucide-react';
 
