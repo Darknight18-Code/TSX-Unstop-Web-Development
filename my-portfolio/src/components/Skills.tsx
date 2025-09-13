@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from 'react';
-import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { motion, useInView, useMotionValue, useSpring, useTransform, Variants } from 'framer-motion';
 import { 
   Code2, 
   Palette, 
@@ -137,7 +137,7 @@ const SkillCard: React.FC<{ skill: Skill; index: number; isVisible: boolean }> =
   const Icon = skill.icon;
 
   // Cinematic entry animation variants
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: {
       opacity: 0,
       y: 100,
@@ -160,7 +160,7 @@ const SkillCard: React.FC<{ skill: Skill; index: number; isVisible: boolean }> =
     }
   };
 
-  const glowVariants = {
+  const glowVariants: Variants = {
     initial: { opacity: 0, scale: 0.8 },
     animate: { 
       opacity: [0, 0.5, 0],
@@ -378,7 +378,7 @@ const Skills: React.FC = () => {
   };
 
   // Header animation variants
-  const headerVariants = {
+  const headerVariants: Variants = {
     hidden: { opacity: 0, y: -50 },
     visible: {
       opacity: 1,
