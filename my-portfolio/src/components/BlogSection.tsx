@@ -78,7 +78,7 @@ const headerVariants = {
     rotateX: 0,
     transition: {
       duration: 1,
-      ease: "easeInOut"
+      ease: "easeOut"
     }
   }
 };
@@ -92,7 +92,7 @@ const buttonVariants = {
     transition: {
       duration: 0.8,
       delay: 1.2,
-      ease: "easeInOut"
+      ease: "easeOut"
     }
   }
 };
