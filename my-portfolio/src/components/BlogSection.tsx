@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { motion,Variants } from 'framer-motion';
 import Card3D from './Card3D';
 import { BlogPost } from '@/types/blog';
 import { ArrowRight, Zap } from 'lucide-react';
@@ -70,7 +70,7 @@ const mockBlogPosts: BlogPost[] = [
   }
 ];
 
-const headerVariants = {
+const headerVariants: Variants = {
   hidden: { opacity: 0, y: 50, rotateX: -15 },
   visible: {
     opacity: 1,
@@ -83,7 +83,7 @@ const headerVariants = {
   }
 };
 
-const buttonVariants = {
+const buttonVariants: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.9 },
   visible: {
     opacity: 1,
@@ -96,6 +96,7 @@ const buttonVariants = {
     }
   }
 };
+
 
 const BlogSection3D: React.FC = () => {
   return (
